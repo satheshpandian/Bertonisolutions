@@ -1,0 +1,11 @@
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\PhotoAlbhum.Repository.dll
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\PhotoAlbhum.Repository.pdb
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\Newtonsoft.Json.dll
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\PhotoAlbum.Models.dll
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\PhotoAlbum.Models.pdb
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\Newtonsoft.Json.xml
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbum.Repository.csprojAssemblyReference.cache
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbum.Repository.csproj.CoreCompileInputs.cache
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbum.Repository.csproj.CopyComplete
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbhum.Repository.dll
+C:\interview\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbhum.Repository.pdb

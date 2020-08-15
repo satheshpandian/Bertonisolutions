@@ -1,0 +1,78 @@
+﻿@model PhotoAlbum.Models.PhotoAlbumViewModel
+@{
+    Layout = null;
+}
+<style>
+    .TopTable {
+        background-color: #a0d2eb;
+    }
+    .PhotosTable {
+        height: 500px;
+        border: 1px solid #e5eaf5;
+        background-color: #a28089;
+    }
+        .PhotosTable img {
+            width: 20px;
+            height: 20px;
+        }
+    .CommentsTable {
+        background-color: #d0bdf4;
+        border: 1px solid #8458B3;
+    }
+        .CommentsTable td {
+            background-color: #e5eaf5;
+        }
+</style>
+<h2>Index</h2>
+@Scripts.Render("~/bundles/jquery")
+<table class="TopTable">
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.SelectedAlbumId, new { @class = "col-md-2 control-label" })
+        </td>
+        <td>
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.SelectedAlbumId, Model.AvailableAlbums)
+            </div>
+        </td>
+        <td>
+            <div class="col-md-10">
+                <input type="button" id="btnViewAlbum" class="btn btn-primary" value="View Album" />
+            </div>
+        </td>
+    </tr>
+</table>
+<div id="wrapper">
+    <table id="tblPhotos" class="PhotosTable">
+    </table>
+    <table id="tblComments" class="CommentsTable">
+    </table>
+</div>
+
+<script>
+    $("#btnViewAlbum").on("click", function (e) {        
+        var selectedAlbum = $('#SelectedAlbumId').children("option:selected").val();   
+        $.get("GetPhotosById/" + selectedAlbum, function (data) {
+            fillPhotos(data);
+            
+        });
+        e.preventDefault();
+        e.stopPropagation();        
+    });
+
+    function fillPhotos(data) {
+        $('#tblPhotos').html('');
+        $.each(data, function (index, photo) {
+            $('#tblPhotos').append('<tr><td>' + photo.title + '</td><td><img src=' + photo.thumbnailUrl + '/></td><td><input type=button value=ViewComments onclick=fillcomments(' + photo.id+')></td></tr>');
+        });        
+    }
+
+    function fillcomments(id) {
+        $('#tblComments').html('');
+        $.get("GetCommentsById/" + id, function (data) {
+            $.each(data, function (index, comment) {
+                $('#tblComments').append('<tr><td>' + comment.name + '</td><td>' + comment.email + '</td><td>' + comment.body + '</td></tr>');
+            }); 
+        });
+    }
+</script>
