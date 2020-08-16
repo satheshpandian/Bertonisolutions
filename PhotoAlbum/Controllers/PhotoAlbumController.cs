@@ -1,9 +1,5 @@
 ﻿using PhotoAlbhum.Repository;
 using PhotoAlbum.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace PhotoAlbum.Controllers
@@ -22,11 +18,12 @@ namespace PhotoAlbum.Controllers
             photoAlbumViewModel.Albums = _apiClient.GetAlbums();
             return View(photoAlbumViewModel);
         }
-
+        [HttpGet]
         public JsonResult GetPhotosById(int id)
         {
             return Json(_apiClient.GetPhotosByAlbumId(id), JsonRequestBehavior.AllowGet);
         }
+        [HttpGet]
         public JsonResult GetCommentsById(int id)
         {
             return Json(_apiClient.GetCommentsById(id), JsonRequestBehavior.AllowGet);

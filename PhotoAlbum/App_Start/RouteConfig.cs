@@ -18,6 +18,16 @@ namespace PhotoAlbum
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "PhotoAlbum", action = "Index", id = UrlParameter.Optional }
             );
+           // routes.MapRoute(
+           //     name: "GetPhotosById",
+           //     url: "{controller}/{action}/{id}",
+           //     defaults: new { controller = "PhotoAlbum", action = "GetPhotosById" }
+           // );
+           // routes.MapRoute(
+           //    name: "GetCommentsById",
+           //    url: "{controller}/{action}/{id}",
+           //    defaults: new { controller = "PhotoAlbum", action = "GetCommentsById" }
+           //);
         }
     }
 }

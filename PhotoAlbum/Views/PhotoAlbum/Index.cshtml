@@ -6,21 +6,28 @@
     .TopTable {
         background-color: #a0d2eb;
     }
+
     .PhotosTable {
-        height: 500px;
-        border: 1px solid #e5eaf5;
-        background-color: #a28089;
+        border: 1px solid #fbe3e8;
+        background-color: #ebf6f5;
     }
+        .PhotosTable th {
+            background-color: #5cbdb9;
+        }
         .PhotosTable img {
             width: 20px;
             height: 20px;
         }
+
     .CommentsTable {
         background-color: #d0bdf4;
-        border: 1px solid #8458B3;
+        border: 1px solid #a0d2eb;
     }
+        .CommentsTable th {
+            background-color: #5cbdb9;
+        }
         .CommentsTable td {
-            background-color: #e5eaf5;
+            background-color: #ebf6f5;
         }
 </style>
 <h2>Index</h2>
@@ -43,36 +50,49 @@
     </tr>
 </table>
 <div id="wrapper">
-    <table id="tblPhotos" class="PhotosTable">
-    </table>
-    <table id="tblComments" class="CommentsTable">
-    </table>
+    <div id="accordion">
+        <h3>Photos</h3>
+        <div>
+            <table id="tblPhotos" class="PhotosTable">
+            </table>
+        </div>
+
+    </div>
+    <h3>Comments</h3>
+    <div>
+        <table id="tblComments" class="CommentsTable">
+        </table>
+    </div>
 </div>
 
 <script>
-    $("#btnViewAlbum").on("click", function (e) {        
-        var selectedAlbum = $('#SelectedAlbumId').children("option:selected").val();   
+
+    $("#btnViewAlbum").on("click", function (e) {
+        var selectedAlbum = $('#SelectedAlbumId').children("option:selected").val();
         $.get("GetPhotosById/" + selectedAlbum, function (data) {
             fillPhotos(data);
-            
+
         });
         e.preventDefault();
-        e.stopPropagation();        
+        e.stopPropagation();
     });
 
     function fillPhotos(data) {
         $('#tblPhotos').html('');
+        $('#tblPhotos').append('<tr><th>Title</th><th>ThumbnailUrl </th><th>View </th></tr>');
+
         $.each(data, function (index, photo) {
-            $('#tblPhotos').append('<tr><td>' + photo.title + '</td><td><img src=' + photo.thumbnailUrl + '/></td><td><input type=button value=ViewComments onclick=fillcomments(' + photo.id+')></td></tr>');
-        });        
+            $('#tblPhotos').append('<tr><td>' + photo.title + '</td><td><img src=' + photo.thumbnailUrl + '/></td><td><input type=button value=ViewComments onclick=fillcomments(' + photo.id + ')></td></tr>');
+        });
     }
 
     function fillcomments(id) {
         $('#tblComments').html('');
+        $('#tblComments').append('<tr><th>Name</th><th>Email </th><th>Body </th></tr>');
         $.get("GetCommentsById/" + id, function (data) {
             $.each(data, function (index, comment) {
                 $('#tblComments').append('<tr><td>' + comment.name + '</td><td>' + comment.email + '</td><td>' + comment.body + '</td></tr>');
-            }); 
+            });
         });
     }
 </script>
