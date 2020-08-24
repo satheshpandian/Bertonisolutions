@@ -3,3 +3,9 @@ C:\interview\Bertonisolutions\PhotoAlbum.Models\bin\Debug\PhotoAlbum.Models.pdb
 C:\interview\Bertonisolutions\PhotoAlbum.Models\obj\Debug\PhotoAlbum.Models.csproj.CoreCompileInputs.cache
 C:\interview\Bertonisolutions\PhotoAlbum.Models\obj\Debug\PhotoAlbum.Models.dll
 C:\interview\Bertonisolutions\PhotoAlbum.Models\obj\Debug\PhotoAlbum.Models.pdb
+C:\Bertonisolutions\PhotoAlbum.Models\bin\Debug\PhotoAlbum.Models.dll
+C:\Bertonisolutions\PhotoAlbum.Models\bin\Debug\PhotoAlbum.Models.pdb
+C:\Bertonisolutions\PhotoAlbum.Models\obj\Debug\PhotoAlbum.Models.csprojAssemblyReference.cache
+C:\Bertonisolutions\PhotoAlbum.Models\obj\Debug\PhotoAlbum.Models.csproj.CoreCompileInputs.cache
+C:\Bertonisolutions\PhotoAlbum.Models\obj\Debug\PhotoAlbum.Models.dll
+C:\Bertonisolutions\PhotoAlbum.Models\obj\Debug\PhotoAlbum.Models.pdb

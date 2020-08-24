@@ -9,3 +9,14 @@ C:\interview\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbum.Reposi
 C:\interview\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbum.Repository.csproj.CopyComplete
 C:\interview\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbhum.Repository.dll
 C:\interview\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbhum.Repository.pdb
+C:\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\PhotoAlbhum.Repository.dll
+C:\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\PhotoAlbhum.Repository.pdb
+C:\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\Newtonsoft.Json.dll
+C:\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\PhotoAlbum.Models.dll
+C:\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\PhotoAlbum.Models.pdb
+C:\Bertonisolutions\PhotoAlbhum.Repository\bin\Debug\Newtonsoft.Json.xml
+C:\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbum.Repository.csprojAssemblyReference.cache
+C:\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbum.Repository.csproj.CoreCompileInputs.cache
+C:\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbum.Repository.csproj.CopyComplete
+C:\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbhum.Repository.dll
+C:\Bertonisolutions\PhotoAlbhum.Repository\obj\Debug\PhotoAlbhum.Repository.pdb
